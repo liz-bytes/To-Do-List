@@ -1,0 +1,132 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input Box & Add Button */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Main Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Task */
+li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-direction: column;
+}
+
+/* Task Text */
+.task-text {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+/* Delete & Add Sub-Task Buttons */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.add-subtask-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.add-subtask-btn:hover {
+    background: #0056b3;
+}
+
+/* Nested Sub-Tasks */
+.subtask-list {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+.subtask-list li {
+    background: #f9f9f9;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
